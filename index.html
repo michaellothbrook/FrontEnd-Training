@@ -1,106 +1,265 @@
-<!DOCTYPE html><!-- doctype do HTML5 -->
-<html>
-	<head>
-		<title>bootstrap aula</title>
-		
-		<!-- Importante para habilitar os recursos de Responsividade em conjunto com o CSS -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-  		        
-  		<link rel="stylesheet" href="css/bootstrap.css">
-      
-	</head>
-	
-<body>
-		
-    <!-- Início da barra de navegação -->
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-            
-            <!-- botao utilizado para abrir menu em dispositivos resolucao menor -->
-          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-          	</button>
-            
-            <!-- logo do site -->
-            <a class="navbar-brand" href="#">MOBILI</a>
-			
-			<!-- inicio menu -->
-            <div class="navbar-collapse collapse navbar-right">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#about">A EMPRESA</a></li>
-                <li><a href="#contact">PRODUTOS</a></li>
-                <li><a href="#contact">SERVICOS</a></li>
-              </ul>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- HTML5Shiv -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>Música para todos - Spotify</title>
+    <link rel="icon" href="imagens/favicon.png">
+  </head>
+  <body>
+    
+    <header><!--INICIO CABECALHO-->
+
+      <!--INICIO BARRA NAVEGACAO-->
+      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparent">
+        
+        <div class="container"><!--INICIO CONTAINER-->
+
+          <!--MARCA-->
+          <a href="" class="navbar-brand">
+             <img src="imagens/spotify.svg" width="142">
+          </a>
+          <!--MARCA-->
+
+          <!--BOTAO RESPONSIVO-->
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <i class="fas fa-bars text-white"></i>
+          </button>
+          <!--BOTAO RESPONSIVO-->
+
+          <!--INICIO DIV MENU-NAVEGACAO--> 
+          <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="" class="nav-link">Premium</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Ajuda</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Baixar</a>
+              </li>
+              <li class="nav-item divisor">
+                
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Inscrever-se</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Entrar</a>
+              </li>
+            </ul>
+          </div>
+          <!--FINAL DIV MENU-NAVEGACAO-->
+
+        </div><!--FIM CONTAINER-->
+
+      </nav>
+      <!--FINAL BARRA NAVEGACAO-->
+
+    </header><!--FINAL CABECALHO-->
+
+    <section id="home" class="d-flex"><!--INICIO PRIMEIRA SECAO-->
+      <div class="container align-self-center"><!--INICIO CONTAINER-->
+        <div class="row"><!--INICIO ROW-->
+          <div class="col-md-12 capa">
+
+            <div id="imagens-carousel" class="carousel slide" data-ride="carousel">
+
+              <!--imagens-->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h1>Música para todos</h1>
+                  <a href="" class="btn btn-lg btn-custom btn-roxo">
+                    Aproveite o Spotify Free
+                  </a>
+                  <a href="" class="btn btn-lg btn-custom btn-branco">
+                    Obter Spotify Premium
+                  </a>
+                </div>
+
+                <div class="carousel-item">
+                  <h1>As melhores rádios</h1>
+                  <a href="" class="btn btn-lg btn-custom btn-branco">
+                    <i class="fas fa-music">ouça agora</i>
+                  </a>
+                </div>
+
+              <!--controles-->
+              <a href="#imagens-carousel" class="carousel-control-prev" data-slide="prev">
+                <i class="fas fa-angle-left fa-3x"></i>
+              </a>
+              <a href="#imagens-carousel" class="carousel-control-next" data-slide="next">
+                <i class="fas fa-angle-right fa-3x"></i>
+              </a>
+
             </div>
-            <!-- fim menu -->
-            
-		</div>
-	</div>
-	<!-- Fim da barra de navegação -->
-	
-   <!-- Cria area principal de marketing de um site -->
-    <div class="jumbotron">
-      <div class="container">
-      	<br />
-        <h1>Desenvolvimento de sistemas</h1>
-        <p>
-        	A Mobili é uma empresa com mais de 5 anos de experiência no desenvolvimento de sistemas.
-        	Com grande experiência em soluções de Tecnologia da Informação a Mobili é uma empresa especializada 
-        	no desenvolvimento e comercialização de software.
-        </p>
-        <p><a class="btn btn-primary btn-lg" role="button">Veja mais &raquo;</a></p>
-      </div>
-    </div>
 
-    <div class="container"><!-- container -->
-      <!-- Criação de colunas -->
-      <div class="row">
-      	
-        <div class="col-md-4">
-          <h2>A EMPRESA</h2>
-          <p>
-          	Com grande experiência em soluções de Tecnologia da Informação a Mobili é uma empresa especializada no 
-          	desenvolvimento e comercialização de software.
-          </p>
-          <p><a class="btn btn-default" href="#">Veja mais &raquo;</a></p>
-        </div>
-        
-        <div class="col-md-4">
-          <h2>PRODUTOS</h2>
-          <p>
-          	Software para: Lojas de vestuários, Revenda de veículos, Agropecuária, lojas virtuais, aplicativos para celulares e 
-          	criação de softwares personalizados.
-          </p>
-          <p><a class="btn btn-default" href="#">Veja mais &raquo;</a></p>
-        </div>
-        
-        <div class="col-md-4">
-          <h2>SERVIÇOS</h2>
-          <p>
-          	   - Sites institucionais
-			   <br />- Lojas virtuais
-			   <br />- Sistemas Online
-			   <br />- Sites para celulares
-          </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div>
-        
-      </div>
+          </div>
+        </div><!--FINAL ROW-->
+      </div><!--FINAL CONTAINER-->
+    </section><!--FINAL PRIMEIRA SECAO-->
 
-      <hr>
+    <section id="servicos" class="caixa"><!--INICIO SEGUNDA SECAO-->
 
-      <footer>
-        <p>&copy; MOBILI 2014</p>
-      </footer>
-    </div> <!-- /container -->
+      <div class="container"><!--INICIO CONTAINER-->
+        <div class="row"><!--INICIO ROW PAGINA-->
 
-	</body>
-	
+          <div class="col-md-6"><!--INICIO DIV IMAGENS-->
+
+            <div class="row albuns"><!--INICIO ROW IMAGENS 1 e 2-->
+              <div class="col-md-6">
+                <img src="imagens/img1.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <img src="imagens/img2.jpg" class="img-fluid">
+              </div>
+            </div><!--FINAL ROW IMAGENS 1 e 2-->
+
+            <div class="row albuns"><!--INICIO ROW IMAGENS 3 e 4-->
+              <div class="col-md-6">
+                <img src="imagens/img3.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <img src="imagens/img4.jpg" class="img-fluid">
+              </div>
+            </div><!--FINAL row IMAGENS 3 e 4-->
+
+          </div><!--FINAL DIV IMAGENS-->
+
+          <div class="col-md-6"><!--INICIO DIV TEXTOS-->
+
+            <h2>O que o spotify tem?</h2>
+
+            <h3>Músicas</h3>
+            <p>O Spotify tem milhões de músicas. Escute seus sons fav oritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+
+            <h3>Playlists</h3>
+            <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
+
+            <h3>Novos lançamentos</h3>
+            <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+
+          </div><!--FINAL DIV TEXTOS-->
+
+        </div><!--FINAL ROW PAGINA-->
+
+      </div><!--FINAL CONTAINER-->
+
+    </section><!--FINAL SEGUNDA SECAO-->
+
+    <section id="recursos" class="caixa"><!--INICIO TERCEIRA SECAO-->
+
+      <div class="container"><!--INICIO CONTAINER-->
+
+        <div class="row"><!--INICIO ROW PAGINA-->
+
+          <div class="col-md-4">
+
+            <!--CONTEUDOS-->
+            <h2>Fácil</h2>
+            <h3>Buscar</h3>
+            <p>Já sabe o que quer escutar? É só procurar e apertar o play.</p>
+
+            <h3>Navegar</h3>
+            <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.</p>
+
+            <h3>Descobrir</h3>
+            <p>Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.</p>
+          </div>
+
+          <div class="col-md-8">
+            <div class="row rotacionar">
+              <div class="col-md-6">
+                <img src="imagens/iphone1.png" class="img-fluid" id="iphone">
+              </div>
+              <div class="col-md-6">
+                <img src="imagens/iphone2.png" class="img-fluid" id="iphone">
+              </div>
+            </div>
+          </div>
+
+        </div><!--FINAL ROW PAGINA-->
+
+      </div><!--FINAL CONTAINER-->
+
+    </section><!--FINAL TERCEIRA SECAO-->
+
+    <footer>
+      <div class="container"><!--INICIO CONTAINER-->
+        <div class="row"><!--INICIO ROW-->
+          <div class="col-md-2">
+            <img src="imagens/spotify.svg" width="142">
+          </div>
+          <div class="col-md-2">
+            <h4>Company</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Empregos</a></li>
+              <li><a href="">Imprensa</a></li>
+              <li><a href="">Novidades</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Comunidades</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Artistas</a></li>
+              <li><a href="">Desenvolvedores</a></li>
+              <li><a href="">Marcas</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Links úteis</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Ajuda</a></li>
+              <li><a href="">Presentes</a></li>
+              <li><a href="">Player da web</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="imagens/facebook.png">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="imagens/twitter.png">
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="imagens/instagram.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div><!--FINAL ROW-->
+      </div><!--FINAL CONTAINER-->
+    </footer>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
